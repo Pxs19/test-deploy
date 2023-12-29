@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('gen')
+  genMock() {
+    return this.appService.createMock();
+  }
+
+  @Get('list')
+  getMock() {
+    return this.appService.getMock();
+  }
 }
